@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using LabOne;
 
-namespace LabSix
+namespace LabFive
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<GeographicalUnit> countries = new List<GeographicalUnit>();
+            List<LogEntry> log = new List<LogEntry>();
+            ConsoleApp.Execute(countries, log);
         }
     }
 }
