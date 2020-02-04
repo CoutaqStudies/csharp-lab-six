@@ -12,7 +12,8 @@ namespace LabFive
             List<LogEntry> log = new List<LogEntry>();
             //ConsoleApp.Start(countries, log);
             //TaskTwo.Execute();
-            TaskThree.Execute();
+            //TaskThree.Execute();
+            Console.WriteLine(System.Environment.OSVersion);
         }
     }
 }
