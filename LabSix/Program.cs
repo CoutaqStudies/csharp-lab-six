@@ -1,11 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using LabOne;
 
 namespace LabFive
 {
-    class Program
+    public class Program
     {
+        public String osModifier;
         public static void Main(string[] args)
         {
             List<GeographicalUnit> countries = new List<GeographicalUnit>();
@@ -13,16 +14,12 @@ namespace LabFive
             //ConsoleApp.Start(countries, log);
             //TaskTwo.Execute();
             //TaskThree.Execute();
-            Console.WriteLine();
-            String osModifier = "";
             if (System.Environment.OSVersion.ToString().Contains("Unix"))
-            {
                 osModifier = @".\";
-            }
             else
-            {
-
-            }
+                osModifier = @"/bin/Debug/netcoreapp3.0/";
+            TaskThree.Execute();
+            //Console.WriteLine(System.Environment.OSVersion);
         }
     }
 }
