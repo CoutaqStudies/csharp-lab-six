@@ -21,6 +21,10 @@ namespace LabOne
         {
             return Country;
         }
+        public String getCapital()
+        {
+            return Capital;
+        }
         public int getPopulation()
         {
             return Population;

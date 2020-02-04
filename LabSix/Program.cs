@@ -10,7 +10,9 @@ namespace LabFive
         {
             List<GeographicalUnit> countries = new List<GeographicalUnit>();
             List<LogEntry> log = new List<LogEntry>();
-            ConsoleApp.Execute(countries, log);
+            //ConsoleApp.Start(countries, log);
+            //TaskTwo.Execute();
+            TaskThree.Execute();
         }
     }
 }
