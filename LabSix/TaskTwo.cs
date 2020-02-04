@@ -19,12 +19,12 @@ namespace LabFive
                 file += i + "\n";
             }
             file = file.Trim();
-            System.IO.File.WriteAllText(@".\prog.dat", ConsoleApp.StringToBinary(file));
+            System.IO.File.WriteAllText(Program.osModifier + "prog.dat", ConsoleApp.StringToBinary(file));
             ReadProg();
         }
         private static void ReadProg()
         {
-            String data = System.IO.File.ReadAllText(@".\prog.dat");
+            String data = System.IO.File.ReadAllText(Program.osModifier + "prog.dat");
             data = ConsoleApp.BinaryToString(data);
             List<int> prog = new List<int>();
             foreach (String line in data.Split("\n"))
@@ -33,7 +33,7 @@ namespace LabFive
             }
             String file = prog[4] + "\n" + prog[5];
             Console.WriteLine(file);
-            System.IO.File.WriteAllText(@".\newprog.dat", ConsoleApp.StringToBinary(file));
+            System.IO.File.WriteAllText(Program.osModifier + "newprog.dat", ConsoleApp.StringToBinary(file));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace LabFive
     {
         internal static void Execute()
         {
-            String data = System.IO.File.ReadAllText("TaskTwo.txt");
+            String data = System.IO.File.ReadAllText(Program.osModifier+"TaskThree.txt");
             String[] lines = data.Split("\n");
             String file = "";
             int count = 0;
@@ -20,7 +20,7 @@ namespace LabFive
                 }
             }
             Console.WriteLine("Removed "+(lines.Length - count)+" lines.");
-            System.IO.File.WriteAllText(@"/TaskTwoOutput.txt",file.Trim());
+            System.IO.File.WriteAllText(Program.osModifier + "TaskThreeOutput.txt",file.Trim());
         }
     }
 }

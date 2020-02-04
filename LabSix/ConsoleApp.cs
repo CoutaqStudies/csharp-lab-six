@@ -295,7 +295,7 @@ namespace LabFive
             foreach(GeographicalUnit c in countries)
                 file += c.getName() + "," + c.getCapital() + "," + c.getPopulation() + "," + c.getForm() + ";";
             file = StringToBinary(file);
-            System.IO.File.WriteAllText(@".\lab.dat", file);
+            System.IO.File.WriteAllText(Program.osModifier + "lab.dat", file);
             return;
             }
         }
