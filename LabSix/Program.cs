@@ -13,7 +13,16 @@ namespace LabFive
             //ConsoleApp.Start(countries, log);
             //TaskTwo.Execute();
             //TaskThree.Execute();
-            Console.WriteLine(System.Environment.OSVersion);
+            Console.WriteLine();
+            String osModifier = "";
+            if (System.Environment.OSVersion.ToString().Contains("Unix"))
+            {
+                osModifier = @".\";
+            }
+            else
+            {
+
+            }
         }
     }
 }
