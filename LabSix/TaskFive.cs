@@ -40,7 +40,6 @@ namespace LabFive
             reader.ReadInt32();
             Console.WriteLine("Horizontal Resolution: " + reader.ReadInt32());
             Console.WriteLine("Vertical Resolution: " + reader.ReadInt32());
-            
         }
     }
 }
