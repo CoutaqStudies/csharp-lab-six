@@ -16,7 +16,7 @@ namespace LabFive
         { 
             try
             {
-                String data = System.IO.File.ReadAllText(@".\lab.dat");
+                String data = System.IO.File.ReadAllText(Program.osModifier+@"lab.dat");
                 data = BinaryToString(data);
                 foreach (String entry in data.Split(';').Take(data.Split(';').Count() - 1).ToArray())
                 {

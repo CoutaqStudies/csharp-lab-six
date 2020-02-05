@@ -5,8 +5,10 @@ namespace LabFive
 {
     internal class TaskThree
     {
+        public static String os;
         internal static void Execute()
         {
+            
             String data = System.IO.File.ReadAllText(Program.osModifier+"TaskThree.txt");
             String[] lines = data.Split("\n");
             String file = "";
