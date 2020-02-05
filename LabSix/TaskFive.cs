@@ -8,11 +8,9 @@ namespace LabFive
     {
         internal static void Execute()
         {
-            String bmpPath;
-            if (!System.Environment.OSVersion.ToString().Contains("Unix"))
-                bmpPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\test.bmp";
-            else
-                bmpPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "/test.bmp";
+            String bmpPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\test.bmp";
+            if (Program.FuckingUnix)
+                bmpPath.Replace("\\", "/"); //yea i know this is discusting but what can you do
             FileStream bmpFile = new FileStream(bmpPath, FileMode.Open);
             Bitmap bitmap = new Bitmap(bmpFile);
             Console.WriteLine("Name: " + bmpFile.Name);
