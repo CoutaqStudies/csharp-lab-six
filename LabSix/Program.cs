@@ -13,8 +13,8 @@ namespace LabFive
                 osModifier = @".\";
             List<GeographicalUnit> countries = new List<GeographicalUnit>();
             List<LogEntry> log = new List<LogEntry>();
-            ConsoleApp.Start(countries, log);
-
+            //ConsoleApp.Start(countries, log);
+            TaskFive.Execute();
         }
     }
 }
